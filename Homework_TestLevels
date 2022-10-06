@@ -1,3 +1,6 @@
 4_b
+Test cases for component testing are usually derived from component specifications, design specifications, or data models, whereas test cases for system testing are usually derived from requirement specifications or use cases
 5_b
+Functional testing can be performed at any test level, while white-box testing is restricted to component testing
 6_c
+1 = component test; 2 = acceptance test; 3 = integration test; 4 = system test
