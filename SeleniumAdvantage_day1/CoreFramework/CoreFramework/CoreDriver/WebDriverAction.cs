@@ -5,15 +5,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 
 namespace CoreFramework.CoreDriver
 {
     public class WebDriverAction
     {
         public IWebDriver driver;
-        public WebDriverAction(IWebDriver driver)
+        public IWebDriver wait;
+        public WebDriverAction(IWebDriver driver, IWebDriver wait)
         {
             this.driver = driver;
+            this.wait = wait;
         }
         public By ByXpath(String locator)
         {
@@ -115,6 +118,22 @@ namespace CoreFramework.CoreDriver
             image.SaveAsFile($"C:\\Users\\hoale\\Desktop\\Auto_NashTech\\SeleniumAdvantage_day1\\CoreFramework\\CoreFramework\\CaptureScreen", ScreenshotImageFormat.Png);
           
         }
+        //public IWebElement ReturnWeb(String locator)
+        //{
+           // IWebElement e = FindElementByXpath(locator);
+    
+           // wait.Until(SeleniumExtras.WaitHelpers.
+                   // ExpectedConditions.ElementToBeClickable(e));
+            //return e;
+       // }
 
+
+        //public IWebElement ReturnWeb2(String locator)
+        //{
+            //IWebElement e = FindElementByXpath(locator);
+           // wait.Until(SeleniumExtras.WaitHelpers.
+                 //  ExpectedConditions.ElementToBeSelected(e));
+            //return e;
+        //}
     }
 }
