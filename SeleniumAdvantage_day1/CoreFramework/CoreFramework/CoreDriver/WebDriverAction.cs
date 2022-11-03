@@ -85,21 +85,36 @@ namespace CoreFramework.CoreDriver
         public void CheckTitle(string tilte)
         {
 
-            Thread.Sleep(3000);
+           
             string pageTitle = driver.Title;
-
-            if (pageTitle.Equals(tilte))
+            try
             {
-                Console.WriteLine("Title of page is correct. TestCase is passed");
+                if (pageTitle.Equals(tilte))
+                {
+                    Console.WriteLine("Title of page is correct.");
 
+                }
+                else
+                {
+                    Console.WriteLine("Title of page is not correct.");
+                    Console.WriteLine("Title of page is " + pageTitle);
+                    Console.WriteLine("Title of requirment " + tilte);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("Title of page is not correct. TestCase is failed");
-                Console.WriteLine("Title of page is "+pageTitle);
-                Console.WriteLine("Title of requirment "+tilte);
-            }
+                throw ex;
+                TestContext.Write("CheckTitle is failed");
+            } 
 
         }
+        public void TestCaptureScreenGoogle()
+        {
+            // Sele command to take screenshot
+            Screenshot image = ((ITakesScreenshot)driver).GetScreenshot();
+            image.SaveAsFile($"C:\\Users\\hoale\\Desktop\\Auto_NashTech\\SeleniumAdvantage_day1\\CoreFramework\\CoreFramework\\CaptureScreen", ScreenshotImageFormat.Png);
+          
+        }
+
     }
 }

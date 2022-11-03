@@ -35,8 +35,8 @@ namespace TestCase
                 searchBox.SendKeys("ABC");
             }
             // Sele command to take screenshot
-            Screenshot ss = ((ITakesScreenshot)_driver).GetScreenshot();
-            ss.SaveAsFile($"Downloads", ScreenshotImageFormat.Png);
+            Screenshot image = ((ITakesScreenshot)_driver).GetScreenshot();
+            image.SaveAsFile($"C:\\Users\\hoale\\Desktop\\Auto_NashTech\\SeleniumAdvantage_day1\\CoreFramework\\CoreFramework\\CaptureScreen", ScreenshotImageFormat.Png);
             _driver.Quit();
         }
 
