@@ -100,3 +100,11 @@ C:\Users\hoale\source\repos\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFra
 C:\Users\hoale\source\repos\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFramework.genruntimeconfig.cache
 C:\Users\hoale\source\repos\CoreFramework\CoreFramework\obj\Debug\net6.0\ref\CoreFramework.dll
 C:\Users\hoale\source\repos\CoreFramework\CoreFramework\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll
+C:\Users\hoale\Desktop\Auto_NashTech\SeleniumAdvantage_day1\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFramework.csproj.AssemblyReference.cache
+C:\Users\hoale\Desktop\Auto_NashTech\SeleniumAdvantage_day1\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hoale\Desktop\Auto_NashTech\SeleniumAdvantage_day1\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFramework.AssemblyInfoInputs.cache
+C:\Users\hoale\Desktop\Auto_NashTech\SeleniumAdvantage_day1\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFramework.AssemblyInfo.cs
+C:\Users\hoale\Desktop\Auto_NashTech\SeleniumAdvantage_day1\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFramework.csproj.CoreCompileInputs.cache
+C:\Users\hoale\Desktop\Auto_NashTech\SeleniumAdvantage_day1\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFramework.dll
+C:\Users\hoale\Desktop\Auto_NashTech\SeleniumAdvantage_day1\CoreFramework\CoreFramework\obj\Debug\net6.0\refint\CoreFramework.dll
+C:\Users\hoale\Desktop\Auto_NashTech\SeleniumAdvantage_day1\CoreFramework\CoreFramework\obj\Debug\net6.0\CoreFramework.pdb

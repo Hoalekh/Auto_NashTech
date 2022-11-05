@@ -9,7 +9,7 @@ using NUnit.Framework.Internal;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-
+using AventStack.ExtentReports;
 
 namespace Automation.Pages
 {

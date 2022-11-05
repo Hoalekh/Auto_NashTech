@@ -9,6 +9,10 @@ using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using CoreFramework.CoreDriver;
+using AventStack;
+using AventStack.ExtentReports;
+using AventStack.ExtentReports.Core;
+using OpenQA.Selenium.Support.UI;
 
 namespace CoreFramework.NUnitTestSetUp
 {
@@ -16,6 +20,11 @@ namespace CoreFramework.NUnitTestSetUp
     public class NUnitTestSetUp
     {
         protected IWebDriver? _driver;
+        protected WebDriverAction? driverBaseAction;
+        
+        protected IExtentReporter? _extentReport;
+        protected ExtentTest? _extentTestSuite;
+        protected ExtentTest? extentTestCase;
         [SetUp]
         public void SetUp()
         {

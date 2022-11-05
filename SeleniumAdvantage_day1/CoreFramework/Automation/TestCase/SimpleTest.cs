@@ -28,6 +28,7 @@ namespace TestCase
         {
             HomePage homePage = new HomePage(_driver);
             homePage.InputSearchBox("ABC");
+            homePage.SendKeys("//input[@id='search']", "Anh yeu em");
             homePage.Click("//input[@id='search']");
            
             homePage.CheckTitle("ABC");

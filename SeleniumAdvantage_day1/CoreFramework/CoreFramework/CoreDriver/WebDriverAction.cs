@@ -6,17 +6,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+using AventStack;
+using AventStack.ExtentReports;
 
 namespace CoreFramework.CoreDriver
 {
     public class WebDriverAction
     {
         public IWebDriver driver;
-        public IWebDriver wait;
-        public WebDriverAction(IWebDriver driver, IWebDriver wait)
+        //public ExtentTest? extentTestCase;
+
+        public WebDriverAction(IWebDriver driver)
         {
             this.driver = driver;
-            this.wait = wait;
+         
         }
         public By ByXpath(String locator)
         {

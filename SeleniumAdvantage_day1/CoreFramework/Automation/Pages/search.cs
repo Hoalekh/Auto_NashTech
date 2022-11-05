@@ -11,7 +11,7 @@ using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using CoreFramework.CoreDriver;
-
+using AventStack.ExtentReports;
 namespace Automation.Pages
 {
 
