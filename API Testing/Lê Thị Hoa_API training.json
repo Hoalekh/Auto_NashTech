@@ -91,9 +91,10 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"02. Check status code is 201\", function () {\r",
+							"pm.test(\"TC 08. Check status code is 201\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
-							"});"
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -282,7 +283,7 @@
 					"script": {
 						"exec": [
 							"\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Test status code when id is correct\", function () {\r",
 							"   var jsonData = pm.response.json();\r",
 							"    var expectID=pm.response.json().id;\r",
 							"    console.log(expectID);\r",
@@ -297,12 +298,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/todos",
+					"raw": "{{url}}/todos/1771",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"todos"
+						"todos",
+						"1771"
 					]
 				}
 			},
@@ -355,9 +357,11 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"10. Check status code when post error is 400\", function () {\r",
-							"    pm.response.to.have.status(400);\r",
-							"});"
+							"pm.test(\"10. Check status code when post error is 400 when doneStatus is not BOOLEAN\", function () {\r",
+							" \r",
+							"    pm.expect(pm.response.text()).to.include(\"Failed Validation: doneStatus should be BOOLEAN\");\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -474,9 +478,12 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"13. Check status code when Options is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
+							"pm.test(\"13. API allow the method: OPTIONS, GET, HEAD, POST\", function () {\r",
+							"    var resheaders = pm.response.headers.all();\r",
+							"    var methods = Object.values(resheaders[2]); \r",
+							"    pm.expect(methods[1]).to.include(\"OPTION\", \"GET\", \"HEAD\", \"POST\");\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -507,8 +514,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"TC09. Check status code of filter is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"TC09. get only doneStatus is true\", function () {\r",
+							"   pm.expect(pm.response.text()).to.include(true);\r",
 							"});"
 						],
 						"type": "text/javascript"
